@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>THE GREATEST SHOW</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="img/Greatest-Showman.png" class="pembuka1">
+        <img src="img/play.png" class="pembuka2" id="icon">
+        
+        <img src="img/1.png" class="pembuka3">
+        <img src="img/6.png">
+    </div>
+    <div class="isi">
+        <img src="img/Bg rev.png" class="image" data-toggle="modal" data-target="#exampleModalCenter">
+        <p>The Greatest Showman adalah sebuah film drama musikal biografi Amerika Serikat tahun 2017 yang disutradarai oleh Michael Gracey dalam debut penyutradaraannya, ditulis oleh Jenny Bicks dan Bill Condon dan dibintangi oleh Hugh Jackman, Zac Efron, Michelle Williams, Rebecca Ferguson, dan Zendaya. Menampilkan sembilan lagu orisinal dari Benj Pasek dan Justin Paul, film ini didasarkan pada kisah dan kehidupan P.T. Barnum, seorang pemain sandiwara dan penghibur terkenal, dan kreasi Barnum & Bailey Circus-nya serta kehidupan atraksi bintangnya.</p>
+          <div class="container bg-dark me">
+              <H4 class="about">ABOUT ME</H4>
+              <img src="img/me.jpg" alt="" class="img">
+              <h6>Nama saya Kristian Aldi Ambalembang</h6>
+              <h6>Saya tinggal di Indonesia</h6>
+              <h6>Sekian Terima Gaji</h6>
+
+          </div>
+      </div>
+
+    
+    
+    <audio id="mySong">
+        <source src="media/audio.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <video width="100%" controls>
+            <source src="media/video.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white pt-5 pb4">
+    <div class="cotainer text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Project By</h5>
+                <h6 class="text-uppercase mb-4 font-weight-bold">Kristian Aldi Ambalembang</h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">20021106058</h6>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <a href="https://drive.google.com/file/d/1TWU-X-xisfTNiA9qt6WXR-qcHNcSsjLm/view?usp=share_link" target="_blank" class="btn btn-info">Download Aplikasi</a>
+            </div>
+        </div>
+    </div>
+  </footer>
+    
+
+    <script type="text/javascript">
+        
+    //Paralax Animation
+
+        let pembuka_1 = document.querySelector('.pembuka1');    
+        let pembuka_3 = document.querySelector('.pembuka3');
+
+        window.onscroll = function(){
+            let Y = window.scrollY;
+
+            pembuka_1.style.transform = 'translateY('+ Y/1.5 +'px)';
+            pembuka_3.style.transform = 'translateY('+ Y/2 +'px)';
+           
+
+        }
+    //Paralax Animation
+
+    //Audio Control
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      if(mySong.paused){
+        mySong.play();
+        icon.src = "img/pause.png"
+      }else{
+        mySong.pause();
+        icon.src = "img/play.png"
+      }
+
+    }
+    //Audio Control
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

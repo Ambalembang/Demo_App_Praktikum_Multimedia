@@ -1,0 +1,172 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    color: white;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.isi{
+    background-color: #1d1d4f;
+    padding: 60px;
+    position: relative;
+}
+
+.img{
+    position: relative;
+    float: right;
+    width: 80px;
+    margin-left: 100px;
+}
+
+.me{
+    position: relative;
+    padding: 60px;
+}
+
+
+p{
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-indent: 50px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    opacity: 0.7;
+}
+
+.pembuka1{
+    margin: 10%;
+}
+
+.pembuka2{
+    position: absolute;
+}
+
+.pembuka3{
+    margin: -23%;
+}
+
+.pembuka2 h1{
+    margin-top: 80px;
+}
+
+.pembuka2 p{
+    width: 600px;
+    max-width: 76vw;
+    text-indent: 0;
+    text-align: center;
+    font-size: 14px;
+    transform: translateY(-20px);
+}
+
+.pembuka2 a{
+    background-color: #7ff5ff;
+    display: block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #514c9c;
+}
+
+
+.pembuka2{
+    position: absolute;
+    width: 80px;
+    top: 2%;
+    float: right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+#icon{
+   cursor: pointer; 
+}
+
+/* ------------------------------------- */ 
+
+.image{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+@media only screen and (min-width: 1300px){
+    .banner{
+        background-position: center;
+        height: 95vh;
+        background-image: url(img/bg.png);
+    }
+
+}
+
+
+@media only screen and (max-width: 1300px){
+    .banner{
+        background-position: center;
+        height: 95vh;
+        background-image: url(img/greatest-showman-poster-2.jpg);
+    }
+
+    .pembuka1{
+        bottom: 9vw;
+        display: none;
+    }
+}
+
+@media (orientation: portrait){
+    img{
+        width: 100%;
+    }
+    .banner{
+        background-position: center;
+        height: 95vh;
+        background-image: url(img/greatest-showman-poster-2.jpg);
+    }
+    .pembuka1{
+        bottom: 9vw;
+        display: none;
+    }
+    .pembuka3{
+        bottom: 6vw;
+    }
+
+}
